@@ -1,7 +1,7 @@
 # Memória de Desenvolvimento — Semana 01: Protocolo HTTP & Sockets Bare-Metal
-**Aluno:** [Seu Nome Completo]  
-**Matrícula:** [Seu Número de Matrícula]  
-**Curso:** Ciência / Engenharia da Computação  
+**Aluno:** Asafe Fernades de Souza
+**Matrícula:** 202421200285
+**Curso:** Sistemas de Informação
 
 ---
 
