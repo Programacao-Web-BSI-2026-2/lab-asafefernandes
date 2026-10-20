@@ -28,7 +28,30 @@ sequenceDiagram
 
 ### Experimento 1: Netcat Nu & Falha 400 Bad Request
 * **Comando Testado:** `nc -C example.com 80` sem o header `Host:`
-* **Resultado:** [Descreva o código de status retornado e por que o Virtual Hosting exige o campo Host no HTTP/1.1]
+* **Resultado:**
+```
+aulaweb@manutencao-System-Product-Name:~/Documentos/prog-web-ronaldo/test-express$ nc -C example.com 80
+GET / HTTP/1.1
+User-Agent: NetcatAcademic/1.0
+Connection: close
+
+HTTP/1.1 400 Bad Request
+Server: cloudflare
+Date: Tue, 20 Oct 2026 00:56:52 GMT
+Content-Type: text/html
+Content-Length: 155
+Connection: close
+CF-RAY: -
+
+<html>
+<head><title>400 Bad Request</title></head>
+<body>
+<center><h1>400 Bad Request</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>
+
+```
 
 ### Experimento 2: Semântica dos Métodos HTTP
 * **Análise dos Verbos:** Explique a diferença observada entre chamadas `GET`, `POST` e `OPTIONS`.
