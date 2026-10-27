@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <meta name="keywords" content="blabla">
+    <meta name="author" content="Asafe">
+    <meta name="description" content="nessa pagina temos varias coisas">
+    <title>Minha página web</title>
+</head>
+
+<body>
+    <header>
+        <h1>Área de Contato do Cliente</h1>
+
+            <nav>
+                <a href="#">Ajuda</a>
+                <a href="#">Sair</a>
+            </nav>
+
+
+    </header>
+
+    <main>
+        <article>
+            <h2>Envie sua mensagem para a nossa equipe de suporte backend</h2>
+
+            <form action="/enviar" method="POST">
+
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="nome" required minlength="3"><br><br>
+
+                <label for="e-mail">Email:</label>
+                <input type="email" id="e-mail" name="email" required minlength="5"><br><br>
+
+                <label for="celular">Telefone Celular:</label>
+                <input type="tel" id="celular" name="celular" pattern="[0-9]{11}" required title="O celular deve conter exatamente 11 números"><br><br>
+               
+                <label for="msg">Mensagem:</label>
+                <textarea name="msg" id="msg"></textarea><br><br>
+
+                <input type="button" value="Disparar Dados">
+            </form>
+        </article>
+
+    </main>
+
+    <footer>
+        Suporte Tech 2026
+    </footer>
+</body>
+
+</html>
