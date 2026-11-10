@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="aula html">
+    <meta name="author" content="Asafe">
+    <title>Refatoração de form</title>
+</head>
+
+<body>
+    <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Abrir Chamado Técnico</legend>
+            <label for="name">Nome Completo:</label>
+            <input type="text" name="Nome" id="name" required>
+
+            <label for="email">E-mail de Contato:</label>
+            <input type="email" name="Email" id="email" required>
+
+            <label for="priority">Prioridade:</label>
+            <select name="prioridade" id="priority" required>
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+            </select>
+
+            <label for="embed">Arquivo de Log ou Print (PNG/PDF):</label>
+            <input type="file" name="anexo" id="embed" required aria-describedby="instrucao-arquivo" accept="image/png,application/pdf">
+
+            <button type="submit">Enviar Chamado</button>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
